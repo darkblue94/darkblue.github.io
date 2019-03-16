@@ -16,12 +16,18 @@ main {
     padding: 50px;
     position: relative;
 }
+#logo {
+    height: 25%;
+    width: 100%;
+}
 nav {
     height: 20px;
-    width: auto;
+    width: 100%;
     text-align: center;
-    word-spacing: 60px;
-    border: 6px solid #FED766;
+    border-radius: 20px;
+    padding:10px;
+
+
 }
 nav a {
     color: #04465a;
@@ -43,6 +49,36 @@ img {
     border: none;
     letter-spacing: 50px;
     margin:80px;
+    width:100%;
+}
+h1 {
+    animation-name: color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    letter-spacing: 30px;
+}
+.garden{
+    background: url("images/tree.png")  ;
+    text-align: center;
+
+
+}
+#email {
+    letter-spacing: 10px;
+    font-size: 24px;
+    margin: 10px;
+}
+#email img {
+    height: 50px;
+    width: 50px;
+    border-radius: 3px;
+}
+#email img:hover {
+
+    background: #FED766;
+    box-shadow: 2.5px 5px black;
+    cursor: pointer;
+
 }
 #icons-container {
     text-align: center;
@@ -71,23 +107,7 @@ img {
     flex-basis: 20%;
     border: none;
 }
-#email {
-    letter-spacing: 10px;
-    font-size: 24px;
-    margin: 10px;
-}
-#email img {
-    height: 50px;
-    width: 50px;
-    border-radius: 3px;
-}
-#email img:hover {
-    height: 40px;
-    width: 40px;
-    background: #FED766;
-    box-shadow: 2.5px 5px black;
-    cursor: pointer;
-}
+
 #icon button {
     display: inline-block;
     margin-left: 7%;
@@ -96,12 +116,7 @@ header a:hover {
     letter-spacing: 10px;
     color: #FED766;
 }
-h1 {
-    animation-name: color;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    letter-spacing: 30px;
-}
+
 h2 {
     animation-name: color;
     animation-duration: 5s;
@@ -119,10 +134,18 @@ h2 {
     font-size: 40px;
 }
 @media(max-width:600px){
+    #logo{
+        width:600px;
+        margin-left:5%;
+    }
+    nav{
+        margin-left:5%;
+    }
+
     #section-1, #section-2,#section-3{
     position: absolute;
     left:180px;
-    top:770px;}
+    top:370px;}
 }
 #section-1 p {
     background: white;
@@ -277,12 +300,6 @@ button:focus {
 .info h4:nth-child(3) {    color: #454547;}
 .info h4:nth-child(4) {    color: forestgreen;}
 
-#logo {
-    height: 25%;
-    width: 100%;
-    margin-top: -40px;
-    border:solid red 1px;
-}
 /* ANIMATIONS */
 @keyframes color {
     from {
