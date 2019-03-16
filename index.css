@@ -1,25 +1,24 @@
 * {
     padding: 0;
     margin: 0;
-    border-radius: 20px;
     font-family: 'Carrois Gothic',
         sans-serif;
 }
 body {
-
     padding: 0;
     margin: 0;
 }
 main {
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
     text-align: center;
     background-color: white;
     padding: 50px;
+    position: relative;
 }
 nav {
     height: 20px;
-    width: 100%;
+    width: auto;
     text-align: center;
     word-spacing: 60px;
     border: 6px solid #FED766;
@@ -50,17 +49,17 @@ img {
     border: none;
     max-width: 1400px;
     margin: 20px auto 0 auto;
-    left:30px;
+    left:0px;
+    position: absolute;
 }
-@media(min-width:800px) {
+@media(min-width:600px) {
     #icons-container {
         display: flex;
         align-items: flex-end;
         /* this distributes the remainder width percentage amongst the children elements */
         justify-content: space-between;
-
+        position: initial;
     }
-
     #section-2 img {
         transform: scale(0.4, 1);
     }
@@ -74,12 +73,12 @@ img {
 }
 #email {
     letter-spacing: 10px;
-    font-size: 12px;
-    margin: 30px;
+    font-size: 24px;
+    margin: 10px;
 }
 #email img {
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     border-radius: 3px;
 }
 #email img:hover {
@@ -96,7 +95,6 @@ img {
 header a:hover {
     letter-spacing: 10px;
     color: #FED766;
-
 }
 h1 {
     animation-name: color;
@@ -120,6 +118,12 @@ h2 {
     box-shadow: 2.5px 5px black;
     font-size: 40px;
 }
+@media(max-width:600px){
+    #section-1, #section-2,#section-3{
+    position: absolute;
+    left:180px;
+    top:770px;}
+}
 #section-1 p {
     background: white;
     color: black;
@@ -128,10 +132,15 @@ h2 {
 #section-1::-webkit-scrollbar ,#section-2::-webkit-scrollbar , #section-3::-webkit-scrollbar {
     width: 10px;
 }
-#section-1::-webkit-scrollbar-track {
+#section-1::-webkit-scrollbar-track,
+#section-2::-webkit-scrollbar-track,
+#section-3::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
 }
-#section-1::-webkit-scrollbar-thumb {
+#section-1::-webkit-scrollbar-thumb,
+#section-2::-webkit-scrollbar-thumb ,
+#section-3::-webkit-scrollbar-thumb
+{
     background-color: #272727;
     outline: 3px solid slategrey;
 }
@@ -154,14 +163,7 @@ h2 {
     color: #FEE59D;
     letter-spacing: 10px;
 }
-#section-2::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
-}
 
-#section-2::-webkit-scrollbar-thumb {
-    background-color: #272727;
-    outline: 3px solid slategrey;
-}
 #section-2 img {
     height: 35%;
     width: 30%;
@@ -175,7 +177,7 @@ h2 {
 
 }
 #section-3 {
-    height: 100%;
+    height: 300px;
     width: 90%;
     background-color: #454547;
     padding: 50px;
@@ -186,13 +188,7 @@ h2 {
     color:white;
     font-size: 2em;
 }
-#section-3::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
-}
-#section-3::-webkit-scrollbar-thumb {
-    background-color: #272727;
-    outline: 3px solid slategrey;
-}
+
 .text-box {
     height: 100px;
     width: 80px;
@@ -276,31 +272,16 @@ button:focus {
     font-size: 34px;
     color: #2f2f2f;
 }
-.info h4:nth-child(1) {
-    color: #FED766;
-}
-.info h4:nth-child(2) {
-    color: #04465a;
-}
-.info h4:nth-child(3) {
-    color: #454547;
-}
-.info h4:nth-child(4) {
-    color: forestgreen;
-}
-input[type=text] {
-    width: 100px;
-    -webkit-transition: width .35s ease-in-out;
-    transition: width .35s ease-in-out;
-    margin-right: 40px;
-}
-input[type=text]:focus {
-    width: 250px;
-}
+.info h4:nth-child(1) {    color: #FED766;}
+.info h4:nth-child(2) {    color: #04465a;}
+.info h4:nth-child(3) {    color: #454547;}
+.info h4:nth-child(4) {    color: forestgreen;}
+
 #logo {
     height: 25%;
     width: 100%;
     margin-top: -40px;
+    border:solid red 1px;
 }
 /* ANIMATIONS */
 @keyframes color {
