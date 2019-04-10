@@ -4,10 +4,12 @@
     font-family: 'Carrois Gothic',
         sans-serif;
 }
+
 body {
     padding: 0;
     margin: 0;
 }
+
 main {
     height: auto;
     width: auto;
@@ -16,31 +18,46 @@ main {
     padding: 50px;
     position: relative;
 }
+
 #logo {
     height: 25%;
     width: 100%;
 }
-nav {
-    height: 20px;
-    width: 100%;
-    text-align: center;
-    border-radius: 20px;
-    padding:10px;
 
+nav {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    border: #FED766 1px solid;
+    display: grid;
+    grid-template-columns: repeat(6, 1);
+    grid-template-rows: 100px;
+}
+
+.email {
+    grid-column: 4 / 4;
+}
+
+.github {
+    grid-column: 1 / 4;
 
 }
+
 nav a {
     color: #04465a;
     border-color: transparent;
-    font-size: 2em;
+    font-size: 1em;
     text-decoration: none;
     letter-spacing: 20px;
+
 }
+
 img {
     height: 100px;
     width: 100px;
     border: 0px;
 }
+
 #name {
     font-size: 76px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -48,31 +65,37 @@ img {
     display: inline-block;
     border: none;
     letter-spacing: 50px;
-    margin:80px;
-    width:100%;
+    margin: 80px;
+    width: 100%;
 }
+
 h1 {
     animation-name: color;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     letter-spacing: 30px;
 }
-.garden{
-    background: url("images/tree.png")  ;
+
+.garden {
+    background: url("images/tree.png");
     text-align: center;
+    width:100%;
 
 
 }
+
 #email {
     letter-spacing: 10px;
     font-size: 24px;
     margin: 10px;
 }
+
 #email img {
     height: 50px;
     width: 50px;
     border-radius: 3px;
 }
+
 #email img:hover {
 
     background: #FED766;
@@ -80,14 +103,16 @@ h1 {
     cursor: pointer;
 
 }
+
 #icons-container {
     text-align: center;
     border: none;
     max-width: 1400px;
     margin: 20px auto 0 auto;
-    left:0px;
+    left: 0px;
     position: absolute;
 }
+
 @media(min-width:600px) {
     #icons-container {
         display: flex;
@@ -96,10 +121,12 @@ h1 {
         justify-content: space-between;
         position: initial;
     }
+
     #section-2 img {
         transform: scale(0.4, 1);
     }
 }
+
 .icon {
     padding: 20px;
     margin-bottom: 20px;
@@ -112,6 +139,7 @@ h1 {
     display: inline-block;
     margin-left: 7%;
 }
+
 header a:hover {
     letter-spacing: 10px;
     color: #FED766;
@@ -123,6 +151,7 @@ h2 {
     animation-iteration-count: infinite;
     letter-spacing: 14px;
 }
+
 #section-1 {
     background-color: #FED766;
     height: 350px;
@@ -133,44 +162,73 @@ h2 {
     box-shadow: 2.5px 5px black;
     font-size: 40px;
 }
-@media(max-width:600px){
-    #logo{
-        width:600px;
-        margin-left:5%;
-    }
-    nav{
-        margin-left:5%;
+
+@media(max-width:600px) {
+    #logo {
+        width: 600px;
+        margin-left: 5%;
     }
 
-    #section-1, #section-2,#section-3{
-    position: absolute;
-    left:180px;
-    top:370px;}
+    nav {
+
+        width:600px;
+
+    }
+
+    #section-1,
+    #section-2,
+    #section-3 {
+        position: absolute;
+        left: 180px;
+        top: 790px;
+
+    }
+
+    video {
+        box-shadow: 2px 2px 5px 0.3px rgb(64, 64, 64);
+        width:100%;
+        height:100%;
+    }
+
+    .info {
+        top:550px;
+        position: absolute;
+        left:200px;
 }
+
+
+}
+
 #section-1 p {
     background: white;
     color: black;
-    margin:20px;
+    margin: 20px;
 }
-#section-1::-webkit-scrollbar ,#section-2::-webkit-scrollbar , #section-3::-webkit-scrollbar {
+
+#section-1::-webkit-scrollbar,
+#section-2::-webkit-scrollbar,
+#section-3::-webkit-scrollbar {
     width: 10px;
 }
+
 #section-1::-webkit-scrollbar-track,
 #section-2::-webkit-scrollbar-track,
 #section-3::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
 }
+
 #section-1::-webkit-scrollbar-thumb,
-#section-2::-webkit-scrollbar-thumb ,
-#section-3::-webkit-scrollbar-thumb
-{
+#section-2::-webkit-scrollbar-thumb,
+#section-3::-webkit-scrollbar-thumb {
     background-color: #272727;
     outline: 3px solid slategrey;
 }
+
 #section-1 h1 {
     font-size: 40px;
     width: 100%;
 }
+
 #section-2 {
     height: 300px;
     width: 90%;
@@ -181,6 +239,7 @@ h2 {
     border: none;
     box-shadow: 2.5px 5px black;
 }
+
 #section-2 p {
     font-size: 14px;
     color: #FEE59D;
@@ -194,11 +253,13 @@ h2 {
     margin: 25px;
     padding: 20px;
 }
+
 #section-2 img:hover {
     background: #FEE59D;
     box-shadow: 0px 5px 20px 1px #04465a;
 
 }
+
 #section-3 {
     height: 300px;
     width: 90%;
@@ -208,143 +269,179 @@ h2 {
     border: none;
     overflow: scroll;
     box-shadow: 2.5px 5px black;
-    color:white;
+    color: white;
     font-size: 2em;
 }
 
-.video__container{
+.video__container {
 
-    background:white;
-    width:100%;
-    border-radius:20px;
-    border:1px solid red;
-    padding:20px;
-}
-.video__desc{
-    color:black;
+    background: white;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
 }
 
-
-video{
-    box-shadow:2px 2px 5px 0.3px rgb(64,64,64);
+.video__desc {
+    color: black;
 }
+
+
+video {
+    box-shadow: 2px 2px 5px 0.3px rgb(64, 64, 64);
+}
+
 .text-box {
     height: 100px;
     width: 80px;
     display: inline;
     font-size: 14px;
 }
+
 button {
     font-size: 10px;
 }
+
 button:focus {
     outline: 0;
 }
+
 #gomez {
     background-color: transparent;
     color: #272727;
     border: none;
 }
+
 #gomez:hover {
     background-color: rgb(248, 223, 149);
     box-shadow: 2.5px 5px black;
     cursor: pointer;
 }
+
 #gomez:focus {
     animation-name: gomez;
     animation-duration: 8s;
     animation-iteration-count: infinite;
 }
+
 #skills {
     background-color: transparent;
     color: #272727;
     border: none;
 }
+
 #skills:hover {
     background-color: #04465a;
     box-shadow: 2.5px 5px black;
     cursor: pointer;
 }
+
 #skills:focus {
     animation-name: skills;
     animation-duration: 8s;
     animation-iteration-count: infinite;
 }
+
 #goals {
     background-color: transparent;
     color: #272727;
     cursor: pointer;
     border: none;
 }
+
 #goals:hover {
     background-color: #454547;
     box-shadow: 2.5px 5px black;
 }
+
 #goals:focus {
     animation-name: goals;
     animation-duration: 8s;
     animation-iteration-count: infinite;
 }
+
 #tree {
     background-color: transparent;
     color: #272727;
     border: none;
 }
+
 #tree:hover {
     background-color: rgb(14, 90, 14);
     box-shadow: 2.5px 5px black;
     cursor: pointer;
 }
+
 #pic {
     height: 450px;
     width: 450px;
-    margin:20px;
+    margin: 20px;
 }
+
 .info {
     border: none;
     height: 20px;
     margin: 100px;
 }
+
 .info h4 {
     border: none;
     letter-spacing: 10px;
     font-size: 34px;
     color: #2f2f2f;
 }
-.info h4:nth-child(1) {    color: #FED766;}
-.info h4:nth-child(2) {    color: #04465a;}
-.info h4:nth-child(3) {    color: #454547;}
-.info h4:nth-child(4) {    color: forestgreen;}
+
+.info h4:nth-child(1) {
+    color: #FED766;
+}
+
+.info h4:nth-child(2) {
+    color: #04465a;
+}
+
+.info h4:nth-child(3) {
+    color: #454547;
+}
+
+.info h4:nth-child(4) {
+    color: forestgreen;
+}
 
 /* ANIMATIONS */
 @keyframes color {
     from {
         color: white;
     }
+
     to {
         color: #FEE59D;
     }
 }
+
 @keyframes skills {
     from {
         background-color: transparent;
     }
+
     to {
         background-color: #04465a;
     }
 }
+
 @keyframes gomez {
     from {
         background-color: transparent;
     }
+
     to {
         background-color: #FED766;
     }
 }
+
 @keyframes goals {
     from {
         background-color: transparent;
     }
+
     to {
         background-color: #454547;
     }
