@@ -157,8 +157,8 @@ h2 {
 }
 
 #section-1 {
-    background-color: #FED766;
-    height: 350px;
+    background-color: #68273E;
+    height: 400px;
     width: 90%;
     overflow: scroll;
     padding: 50px;
@@ -234,7 +234,7 @@ h2 {
 }
 
 #section-2 {
-    height: 300px;
+    height: 400px;
     width: 90%;
     background-color: #04465a;
     padding: 50px;
@@ -265,7 +265,7 @@ h2 {
 }
 
 #section-3 {
-    height: 300px;
+    height: 400px;
     width: 90%;
     background-color: #454547;
     padding: 50px;
@@ -322,7 +322,7 @@ button:focus {
 }
 
 #gomez:focus {
-    animation-name: gomez;
+    animation-name: shade;
     animation-duration: 8s;
     animation-iteration-count: infinite;
 }
@@ -334,13 +334,13 @@ button:focus {
 }
 
 #skills:hover {
-    background-color: #04465a;
+   background-color: rgb(248, 223, 149);
     box-shadow: 2.5px 5px black;
     cursor: pointer;
 }
 
 #skills:focus {
-    animation-name: skills;
+    animation-name: shade;
     animation-duration: 8s;
     animation-iteration-count: infinite;
 }
@@ -353,12 +353,12 @@ button:focus {
 }
 
 #goals:hover {
-    background-color: #454547;
+   background-color: rgb(248, 223, 149);
     box-shadow: 2.5px 5px black;
 }
 
 #goals:focus {
-    animation-name: goals;
+    animation-name: shade;
     animation-duration: 8s;
     animation-iteration-count: infinite;
 }
@@ -395,7 +395,7 @@ button:focus {
 }
 
 .info h4:nth-child(1) {
-    color: #FED766;
+    color:#68273E;
 }
 
 .info h4:nth-child(2) {
@@ -421,17 +421,9 @@ button:focus {
     }
 }
 
-@keyframes skills {
-    from {
-        background-color: transparent;
-    }
 
-    to {
-        background-color: #04465a;
-    }
-}
 
-@keyframes gomez {
+@keyframes shade {
     from {
         background-color: transparent;
     }
@@ -441,12 +433,3 @@ button:focus {
     }
 }
 
-@keyframes goals {
-    from {
-        background-color: transparent;
-    }
-
-    to {
-        background-color: #454547;
-    }
-}

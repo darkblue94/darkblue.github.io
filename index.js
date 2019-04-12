@@ -60,11 +60,11 @@ $(document).ready(function () {
     })
     $("#tree").click(function () {
         $("body").css("background", "rgb(20, 35, 20)");
-        $("#container").css("background-image", "url(/images/forest.jpg)");
+
         $("#section-1").css("background", "rgb(14, 60, 0)");
         $("#section-2").css("background", "rgb(14, 45, 0)");
         $("#section-3").css("background", "rgb(20, 35, 20)");
-        $("img").css("filter", "grayscale(3)");
+        $("img").css("filter", "grayscale(1)");
         $("a").css("color", "red");
         $("a").css("font-size", "24px");
     })
