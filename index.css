@@ -160,10 +160,9 @@ h2 {
 
 
 }
-#section-1 p {
-    background: white;
-    color: black;
-    margin: 20px;
+#section-1 img{
+ left:-450px;
+ position: relative;
 }
 
 #section-1::-webkit-scrollbar,
@@ -189,12 +188,15 @@ h2 {
     font-size: 40px;
     width: 100%;
 }
+#section-1 p{
+    color:white;
+    background: #272727;
+}
 #section-1 ,#section-2,#section-3{
     background-color: #68273E;
     height: 400px;
-    width: 90%;
+    width: 100%;
     overflow: scroll;
-    padding: 50px;
     border-radius: 20px 0px 20px 0px;
     box-shadow: 2.5px 5px black;
     font-size: 40px;
@@ -240,9 +242,12 @@ video {
 
 .text-box {
     height: 100px;
-    width: 80px;
+    width: 40px;
     display: inline;
     font-size: 14px;
+    left:300px;
+    top:-250px;
+    position: relative;
 }
 
 button {
@@ -320,9 +325,10 @@ button:focus {
 }
 
 #pic {
-    height: 450px;
-    width: 450px;
+    height: 250px;
+    width: 250px;
     margin: 20px;
+    transform: rotate(90deg);
 }
 
 .info {
@@ -334,8 +340,7 @@ button:focus {
 .info h4 {
     border: none;
     letter-spacing: 10px;
-    font-size: 64px;
-    color: #2f2f2f;
+    font-size: 44px;
     text-transform: uppercase;
         font-family:serif;
     }
