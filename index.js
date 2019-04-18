@@ -34,12 +34,12 @@ $(document).ready(function () {
         $("#c").hide();
         $("#e").hide();
     })
-    $("#goals").click(function () {
+    $("#projects").click(function () {
         $("#section-3").toggle("fast");
         $("#section-1").hide();
         $("#section-2").hide();
     });
-    $("#goals").hover(function () {
+    $("#projects").hover(function () {
         $("#c").show();
         $("#a").hide();
         $("#b").hide();
