@@ -62,11 +62,14 @@ $(document).ready(function () {
     })
     $("#tree").click(function () {
         $("body").css("background", "rgb(20, 35, 20)");
+        $("main").css('background-image', 'url("images/green.jpg")');
+        $("main").css('background-size', 'contain');
+        $(".garden").css("background", "transparent");
         $("#section-4").toggle("fast");
         $("#section-1").css("background", "rgb(14, 60, 0)");
         $("#section-2").css("background", "rgb(14, 45, 0)");
         $("#section-3").css("background", "rgb(20, 35, 20)");
-        $("img").css("filter", "grayscale(1)");
+        $("img").css("filter", "grayscale(6)");
         $("a").css("color", "red");
         $("a").css("font-size", "24px");
     })

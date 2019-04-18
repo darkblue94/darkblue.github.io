@@ -131,6 +131,7 @@ object::-webkit-scrollbar-button{
     letter-spacing: 10px;
     font-size: 24px;
     margin: 10px;
+    transition-duration: 250ms;
 }
 
 #email img {
@@ -145,6 +146,7 @@ object::-webkit-scrollbar-button{
     background: #FED766;
     box-shadow: 2.5px 5px black;
     cursor: pointer;
+
 
 }
 
@@ -348,36 +350,36 @@ button:focus {
     background-color: transparent;
     color: #272727;
     border: none;
+    transition-duration: 250ms;
 }
 
 #gomez:hover {
     background-color: rgb(248, 223, 149);
     box-shadow: 2.5px 5px black;
     cursor: pointer;
+    transform: rotate(15deg);
 }
 
 #gomez:focus {
-    animation-name: shade;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
+border-bottom:10px solid #FED766;
 }
 
 #skills {
     background-color: transparent;
     color: #272727;
     border: none;
+     transition-duration: 250ms;
 }
 
 #skills:hover {
     background-color: rgb(248, 223, 149);
     box-shadow: 2.5px 5px black;
     cursor: pointer;
+    transform: rotate(15deg);
 }
 
 #skills:focus {
-    animation-name: shade;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
+border-bottom:10px solid #FED766;
 }
 
 #projects {
@@ -385,29 +387,34 @@ button:focus {
     color: #272727;
     cursor: pointer;
     border: none;
+    transition-duration: 250ms;
+
 }
 
 #projects:hover {
     background-color: rgb(248, 223, 149);
     box-shadow: 2.5px 5px black;
+    transform: rotate(15deg);
+
 }
 
-#projects:focus {
-    animation-name: shade;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
+#projects:focus{
+
+    border-bottom:10px  solid #FED766;
 }
 
 #tree {
     background-color: transparent;
     color: #272727;
     border: none;
+    transition-duration: 500ms;
 }
 
 #tree:hover {
     background-color: rgb(14, 90, 14);
     box-shadow: 2.5px 5px black;
     cursor: pointer;
+    transform: rotate(15deg);
 }
 
 #pic {
@@ -458,13 +465,3 @@ button:focus {
 }
 
 
-
-@keyframes shade {
-    from {
-        background-color: transparent;
-    }
-
-    to {
-        background-color: #FED766;
-    }
-}
