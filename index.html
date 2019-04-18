@@ -12,31 +12,35 @@
     <script src="index.js"></script>
     <title> Document </title>
 </head>
+
 <body>
 
     <main id="container">
-    <header>
-                    <nav>
-                        <button style="border:none;background:transparent;" class="github">
-                            <a href="https://github.com/darkblue94"><img src="images/git.png"></a>
-                            <p>GitHub</p>
+        <header>
+            <nav>
+                <button style="border:none;background:transparent;" class="github">
+                    <a href="https://github.com/darkblue94"><img src="images/git.png"></a>
+                    <p>GitHub</p>
+                </button>
+                <div class="email">
+                    <form style="border:none;background:transparent;" action="MAILTO:gomez.work94@gmail.com"
+                        method="post" enctype="text/plain">
+
+
+                        <button style="border:none;background:transparent;" type="submit" id="email">
+                            <img src="images/email2.png">
+                            <p style="border:0px;color:black;">Contact Me</p>
                         </button>
-                        <div class="email">
-                            <form style="border:none;background:transparent;" action="MAILTO:gomez.work94@gmail.com"
-                                method="post" enctype="text/plain">
+                    </form>
+                </div>
+            </nav>
 
-                                <button style="border:none;background:transparent;" type="submit" id="email">
-                                    <img src="images/email2.png">
-                                    <p style="border:0px;color:black;">Contact Me</p>
-                                </button>
-                            </form>
-                        </div>
-                    </nav>
+        </header>
+        <div class="garden">
+            <h1 id="name"> GOMEZ </h1>
+            <h4>Web Developer</h4>
+        </div>
 
-    </header>
-            <div class="garden">
-                <h1 id="name"> GOMEZ </h1>
-            </div>
         <div class="info">
             <h4 id="a">Mauricio Gomez</h4>
             <h4 id="b">Skills</h4>
@@ -64,11 +68,12 @@
                     <img src="images/tree.png"> </button>
             </div>
         </section>
+        <section class="call_to_action">
+            <span>CLICK AROUND TO LEARN ABOUT YOUR NEXT EMPLOYEE</span>
+        </section>
 
         <section id="section-1">
-
             <img id="pic" src="images/mau.jpg">
-
             <div class="text-box">
                 <h1>CURRENTLY LEARNING DART , Material UI components with REACT</h1>
                 <h2 style="font-size:20px "> Philomath, Passionate , Inovative , </h2>
@@ -100,10 +105,13 @@
                 <p> + I am looking to place myself into a company that is not thinking of today or tomorrow, but of the
                     next
                     10 years. Vision and passion are my driving life forces. </p>
-                    <h2> Goals </h2>
+                <h2> Goals </h2>
 
-                <p>Become a contributing developer living in an enviroment that is constant stimulus involving development and the future of it. I want to have learned best practices and have a polished work flow.</p>
-                <p> Working on and with new inovations coming to UI.<strong>Gesture Interfaces,Brain-Computer Interface and Voice User Interface</strong></p>
+                <p>Become a contributing developer living in an enviroment that is constant stimulus involving
+                    development and the future of it. I want to have learned best practices and have a polished work
+                    flow.</p>
+                <p> Working on and with new inovations coming to UI.<strong>Gesture Interfaces,Brain-Computer Interface
+                        and Voice User Interface</strong></p>
                 <p>to become a part of the Rapidly approaching THIRD
                     industrial revolution,
                     the “Sharing Economy” or sometimes put “collaborative consumption or collaborative economy”, where
@@ -113,7 +121,10 @@
         </section>
         <section id="section-2">
             <h1> SKILLS</h1>
-            <p>HTML/CSS/JAVASCRIPT</p>
+            <object class="resume" data="images/FULLSTACKDEV.pdf"></object>
+
+            <div class="img__box">
+                <p>Front-End</p>
                 <img src="images/html.png">
                 <img src="images/CSS3.png">
                 <img src="images/jas.png">
@@ -122,40 +133,54 @@
                 <img src="images/canvas.png">
                 <img src="images/ajax.png">
                 <img src="images/boot.png">
-            <p>Python/Django</p>
+            </div>
+
+            <div class="img__box">
+                <p>Back-End</p>
                 <img src="images/python.png">
                 <img src="images/Django.png">
-            <p>Java/Springboot</p>
+
                 <img src="images/java.svg.png">
                 <img src="images/spring-boot.png">
-            <p> C #/ ASP . NET</p>
+
                 <img src="images/csharp.png">
                 <img src="images/asp.png">
-            <p> DATA BASE</p>
-            <img src="images/sql.png">
-            <p> MySQL </p>
+
+                <img src="images/sql.png">
+
+            </div>
         </section>
         <section id="section-3">
             <h1> Projects </h1>
             <div class="desc">
-            <div class="video__container">
-                <video width="640" height="480" controls>
-                <source src="videos/recipe.mp4" type="video/mp4">
-                </video>
-                <div class="video__desc">
-                    <p>I created a web-app with React that makes API calls to "food2fork.com" , reviving an object that contains Recipes Names , Links, Publishers and Images. I target my input element of 'name' and pass its value into a const variable which I concatenate in the url that is being fetched. I take all that data into my state, pass it as a prop in my Recipe component. i use the map function to unbox every instance of a recipe that contains the main ingredient that was input by the user.</p>
+                <div class="video__container">
+                    <video width="640" height="480" controls>
+                        <source src="videos/recipe.mp4" type="video/mp4">
+                    </video>
+                    <div class="video__desc">
+                        <p>I created a web-app with React that makes API calls to "food2fork.com" , reviving an object
+                            that contains Recipes Names , Links, Publishers and Images. I target my input element of
+                            'name' and pass its value into a const variable which I concatenate in the url that is being
+                            fetched. I take all that data into my state, pass it as a prop in my Recipe component. i use
+                            the map function to unbox every instance of a recipe that contains the main ingredient that
+                            was input by the user.</p>
+                    </div>
+                </div>
+                <div class="video__container">
+                    <video width="640" height="480" controls>
+                        <source src="videos/weather.mp4" type="video/mp4">
+                    </video>
+                    <div class="video__desc">
+                        <p>Here I made a web-app that makes an API call to "openweathermap.org" , communicating with the
+                            server to obtain and filter through weather data. I have a Form component handling the input
+                            data of a City and Country of your choice, storing the value into a variable, concatenating
+                            the variable into the url.
+                            My Weather component takes in the data , which was sorted in my App componenets stat, as
+                            props of Temperature, City,Country,Humidity,Description and error. Visually displaying the
+                            JSON data in my Weather component. </p>
+                    </div>
                 </div>
             </div>
-            <div class="video__container">
-                <video width="640" height="480" controls>
-                <source src="videos/weather.mp4" type="video/mp4">
-                </video>
-                <div class="video__desc">
-                <p>Here I made a web-app that makes an API call to "openweathermap.org" , communicating with the server to obtain and filter through weather data. I have a Form component handling the input data of a City and Country of your choice, storing the value into a variable, concatenating the variable into the url.
-My Weather component takes in the data , which was sorted in my App componenets stat, as props of Temperature, City,Country,Humidity,Description and error. Visually displaying the JSON data in my Weather component. </p>
-                </div>
-                </div>
-                </div>
             </div>
         </section>
     </main>
